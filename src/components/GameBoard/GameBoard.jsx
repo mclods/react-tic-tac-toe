@@ -25,7 +25,7 @@ function GameBoard({ onSquareClick, turns }) {
             {row.map((playerSymbol, colIndex) => (
               <li key={colIndex}>
                 {
-                  <button onClick={() => onSquareClick(rowIndex, colIndex)}>
+                  <button onClick={() => onSquareClick(rowIndex, colIndex)} disabled={!!playerSymbol}>
                     {playerSymbol}
                   </button>
                 }
