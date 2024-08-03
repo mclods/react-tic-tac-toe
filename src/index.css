@@ -44,3 +44,9 @@ h1 {
   margin: 0 auto 3rem auto;
   color: #3f3b00;
 }
+
+ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
