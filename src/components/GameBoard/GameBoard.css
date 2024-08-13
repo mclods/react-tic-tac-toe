@@ -28,3 +28,7 @@
   font-family: 'Caprasimo', cursive;
   padding: 1rem;
 }
+
+.gameBoard button:disabled {
+  cursor: not-allowed;
+}

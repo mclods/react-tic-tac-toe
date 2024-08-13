@@ -1,16 +1,19 @@
 import { useState } from 'react';
 import './Player.css';
 
-function Player({ initialName, symbol, isActive }) {
+function Player({ initialName, symbol, isActive, updatePlayerName }) {
   const [isEditing, setIsEditing] = useState(false);
   const [playerName, setPlayerName] = useState(initialName);
 
   function onEdit() {
     setIsEditing((editing) => !editing);
+    if (isEditing) {
+      updatePlayerName(symbol, playerName);
+    }
   }
 
   function onInputChange(event) {
-    setPlayerName(event.target.value);
+    setPlayerName(event.target.value.toUpperCase());
   }
 
   return (
