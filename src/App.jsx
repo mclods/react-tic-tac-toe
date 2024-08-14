@@ -125,7 +125,7 @@ function App() {
         )}
         <GameBoard onSquareClick={handleSquareClick} board={gameBoard} />
       </div>
-      <Log turns={gameTurns} />
+      <Log turns={gameTurns} players={players} />
     </main>
   );
 }
