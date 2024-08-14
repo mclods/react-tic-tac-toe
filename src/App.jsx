@@ -93,7 +93,6 @@ function App() {
   }
 
   function handleRestart() {
-    setPlayers(PLAYERS);
     setGameTurns([]);
   }
 
